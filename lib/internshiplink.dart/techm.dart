@@ -2,20 +2,20 @@ import 'package:flutter/material.dart';
 import 'package:readmore/readmore.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-class Tcs extends StatefulWidget {
-  Tcs({Key}) : super();
+class Techm extends StatefulWidget {
+  Techm({Key}) : super();
 
   static Route<T> getJobDetail<T>() {
     return MaterialPageRoute(
-      builder: (_) => Tcs(),
+      builder: (_) => Techm(),
     );
   }
 
   @override
-  _TcsPageState createState() => _TcsPageState();
+  _TechmPageState createState() => _TechmPageState();
 }
 
-class _TcsPageState extends State<Tcs> {
+class _TechmPageState extends State<Techm> {
   Widget _header(BuildContext context) {
     return Container(
       padding: EdgeInsets.symmetric(horizontal: 26, vertical: 20),
@@ -24,7 +24,7 @@ class _TcsPageState extends State<Tcs> {
           Row(
             children: [
               Image.network(
-                  'https://jobportall.s3.ap-south-1.amazonaws.com/Internshiplink/logo/TCS.png',
+                  'https://files.techmahindra.com/static/img/brandkit/logo/Logo-True-Colors-original.png',
                   height: 40),
               SizedBox(
                 width: 30,
@@ -33,7 +33,7 @@ class _TcsPageState extends State<Tcs> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    "Tata Consultancy Services",
+                    "Tech Mahindra",
                     style: TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.bold,
@@ -41,7 +41,7 @@ class _TcsPageState extends State<Tcs> {
                   ),
                   SizedBox(height: 5),
                   Text(
-                    "Internship 2023",
+                    "Summer Internship 2023",
                     style: TextStyle(
                       fontSize: 13,
                       fontWeight: FontWeight.bold,
@@ -55,7 +55,7 @@ class _TcsPageState extends State<Tcs> {
           SizedBox(height: 32),
           Row(
             children: [
-              _headerStatic("Salary", "\₹153,000"),
+              _headerStatic("Salary", "\$153,000"),
               _headerStatic("Applicants", "45980"),
               _headerStatic("Post Date", "16 March 2023"),
             ],
@@ -119,8 +119,8 @@ class _TcsPageState extends State<Tcs> {
     return Container(
       padding: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
       child: ReadMoreText(
-        'Tcs isnt just a software company. The Hardware Operations team is responsible for monitoring the state-of-the-art physical infrastructure behind Googles powerful search technology. As an Operations Technician, you will install, configure, test, troubleshoot and maintain hardware (like servers and its components) and server software (like Googles Linux cluster). You will also take on the configuration of more complex components such as networks, routers, hubs, bridges, switches and networking protocols. You will participate in or lead small project teams on larger installations and develop project contingency plans. A typical day involves manual movement and installation of racks, and while it can sometimes be physically demanding, you are excited to work with infrastructure that is at the cutting-edge of computer technology.\n In this role, you will deploy and maintain Googles Data Center Server and Network Infrastructure by installing, configuring, testing, troubleshooting, and repairing hardware and server software. Youu will manage the configuration of networks, routers, bridges, and switches.',
-        trimLines: 5,
+        'Tech Mahindra isnt just a software company. The Hardware Operations team is responsible for monitoring the state-of-the-art physical infrastructure behind Googles powerful search technology. As an Operations Technician, you will install, configure, test, troubleshoot and maintain hardware (like servers and its components) and server software (like Googles Linux cluster). You will also take on the configuration of more complex components such as networks, routers, hubs, bridges, switches and networking protocols. You will participate in or lead small project teams on larger installations and develop project contingency plans. A typical day involves manual movement and installation of racks, and while it can sometimes be physically demanding, you are excited to work with infrastructure that is at the cutting-edge of computer technology.\n In this role, you will deploy and maintain Googles Data Center Server and Network Infrastructure by installing, configuring, testing, troubleshooting, and repairing hardware and server software. Youu will manage the configuration of networks, routers, bridges, and switches. You will lead local project teams on installations and develop project contingency plans. You will manage the physical deployment of data center-related technology and partner with various stakeholders. You will ensure that goals, missions, and projects are successfully delivered and that they are repeatable across our global array of data centers.\n The Data Center team designs and operates some of the most sophisticated electrical and HVAC systems in the world. We are a diverse, upbeat, creative, team-oriented group of engineers committed to building and operating powerful data centers.\n The US base salary range for this full-time position is \$63,000-\$105,000 + bonus + equity + benefits. Our salary ranges are determined by role, level, and location. The range displayed on each job posting reflects the minimum and maximum target for new hire salaries for the position across all US locations. Within the range, individual pay is determined by work location and additional factors, including job-related skills, experience, and relevant education or training. Your recruiter can share more about the specific salary range for your preferred location during the hiring process.',
+        trimLines: 10,
         style: TextStyle(fontSize: 17, color: Color.fromARGB(255, 75, 73, 73)),
         colorClickableText: Colors.pink,
         trimMode: TrimMode.Line,
@@ -205,7 +205,7 @@ class _TcsPageState extends State<Tcs> {
                   padding: MaterialStateProperty.all(
                       EdgeInsets.symmetric(vertical: 16))),
               onPressed: () {
-                launch('https://www.tcs.com/careers/india/internship');
+                launch('https://www.techmahindra.com/en-in/?f=2386460492');
               },
               child: Text(
                 "Apply Now",

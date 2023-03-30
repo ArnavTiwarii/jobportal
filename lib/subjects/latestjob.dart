@@ -1,10 +1,14 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:job/Drawer/NavigationDrawerWidget.dart';
 import 'package:job/LatestJobLink/tcsnqt.dart';
 import 'package:job/LatestJobLink/MPESB.dart';
 import 'package:job/LatestJobLink/upprivate.dart';
 import 'package:job/LatestJobLink/cognizant.dart';
+import 'package:job/LatestJobLink/agniveer.dart';
+import 'package:job/LatestJobLink/armyteacher.dart';
+import 'package:job/LatestJobLink/uppsc.dart';
+import 'package:job/LatestJobLink/ssc.dart';
+import 'package:job/LatestJobLink/ignou.dart';
 
 class latest extends StatelessWidget {
   @override
@@ -155,9 +159,9 @@ class latest extends StatelessWidget {
                 ),
                 InkWell(
                   onTap: () {
-                    // Navigator.of(context).push(MaterialPageRoute(
-                    //   builder: (context) => VieoaaApp(),
-                    // ));
+                    Navigator.of(context).push(MaterialPageRoute(
+                      builder: (context) => Agniveer(),
+                    ));
                   },
                   child: Card(
                     elevation: 1,
@@ -174,7 +178,7 @@ class latest extends StatelessWidget {
                           color: Colors.black,
                         ),
                         Text(
-                          "Army Agniveer Rally Recruitment Men/Women Entry Online Form 2023",
+                          "Army Agniveer Rally Recruitment Online Form 2023",
                           textAlign: TextAlign.center,
                           style: TextStyle(color: Colors.black, fontSize: 25),
                         )
@@ -184,9 +188,9 @@ class latest extends StatelessWidget {
                 ),
                 InkWell(
                   onTap: () {
-                    // Navigator.of(context).push(MaterialPageRoute(
-                    //   builder: (context) => VieoasApp(),
-                    // ));
+                    Navigator.of(context).push(MaterialPageRoute(
+                      builder: (context) => Armyteacher(),
+                    ));
                   },
                   child: Card(
                     elevation: 1,
@@ -242,96 +246,9 @@ class latest extends StatelessWidget {
                 ),
                 InkWell(
                   onTap: () {
-                    // Navigator.of(context).push(MaterialPageRoute(
-                    //   builder: (context) => Videopp(),
-                    // ));
-                  },
-                  child: Card(
-                    elevation: 1,
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10.0),
-                        side: BorderSide(color: Colors.black, width: 2)),
-                    color: Colors.transparent,
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Icon(
-                          Icons.chat,
-                          size: 50,
-                          color: Colors.black,
-                        ),
-                        Text(
-                          "AAICLAS Security Screener Online Form 2023",
-                          textAlign: TextAlign.center,
-                          style: TextStyle(color: Colors.black, fontSize: 25),
-                        )
-                      ],
-                    ),
-                  ),
-                ),
-                InkWell(
-                  onTap: () {
-                    // Navigator.of(context).push(MaterialPageRoute(
-                    //   builder: (context) => VideoAp(),
-                    // ));
-                  },
-                  child: Card(
-                    elevation: 1,
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10.0),
-                        side: BorderSide(color: Colors.black, width: 2)),
-                    color: Colors.transparent,
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Icon(
-                          Icons.chat,
-                          size: 50,
-                          color: Colors.black,
-                        ),
-                        Text(
-                          "NIC Scientific and Technical Posts Online Form 2023",
-                          textAlign: TextAlign.center,
-                          style: TextStyle(color: Colors.black, fontSize: 25),
-                        )
-                      ],
-                    ),
-                  ),
-                ),
-                InkWell(
-                  onTap: () {
-                    // Navigator.of(context).push(MaterialPageRoute(
-                    //   builder: (context) => VieoaApp(),
-                    // ));
-                  },
-                  child: Card(
-                    elevation: 1,
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10.0),
-                        side: BorderSide(color: Colors.black, width: 2)),
-                    color: Colors.transparent,
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Icon(
-                          Icons.chat,
-                          size: 50,
-                          color: Colors.black,
-                        ),
-                        Text(
-                          "MP Apex Bank Various Post Online Form 2023",
-                          textAlign: TextAlign.center,
-                          style: TextStyle(color: Colors.black, fontSize: 25),
-                        )
-                      ],
-                    ),
-                  ),
-                ),
-                InkWell(
-                  onTap: () {
-                    // Navigator.of(context).push(MaterialPageRoute(
-                    //   builder: (context) => VieoaaApp(),
-                    // ));
+                    Navigator.of(context).push(MaterialPageRoute(
+                      builder: (context) => Ssc(),
+                    ));
                   },
                   child: Card(
                     elevation: 1,
@@ -358,9 +275,9 @@ class latest extends StatelessWidget {
                 ),
                 InkWell(
                   onTap: () {
-                    // Navigator.of(context).push(MaterialPageRoute(
-                    //   builder: (context) => VieoasApp(),
-                    // ));
+                    Navigator.of(context).push(MaterialPageRoute(
+                      builder: (context) => Uppsc(),
+                    ));
                   },
                   child: Card(
                     elevation: 1,
@@ -387,66 +304,8 @@ class latest extends StatelessWidget {
                 ),
                 InkWell(
                   onTap: () {
-                    // Navigator.of(context).push(MaterialPageRoute(
-                    //   builder: (context) => VieoasApp(),
-                    // ));
-                  },
-                  child: Card(
-                    elevation: 1,
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10.0),
-                        side: BorderSide(color: Colors.black, width: 2)),
-                    color: Colors.transparent,
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Icon(
-                          Icons.chat,
-                          size: 50,
-                          color: Colors.black,
-                        ),
-                        Text(
-                          "IGNOU Junior Assistant Online Form 2023",
-                          textAlign: TextAlign.center,
-                          style: TextStyle(color: Colors.black, fontSize: 25),
-                        )
-                      ],
-                    ),
-                  ),
-                ),
-                InkWell(
-                  onTap: () {
-                    // Navigator.of(context).push(MaterialPageRoute(
-                    //   builder: (context) => VideoApp(),
-                    // ));
-                  },
-                  child: Card(
-                    elevation: 1,
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10.0),
-                        side: BorderSide(color: Colors.black, width: 2)),
-                    color: Colors.transparent,
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Icon(
-                          Icons.chat,
-                          size: 50,
-                          color: Colors.black,
-                        ),
-                        Text(
-                          "Bihar BAMETI Various Post Online Form 2023",
-                          textAlign: TextAlign.center,
-                          style: TextStyle(color: Colors.black, fontSize: 25),
-                        )
-                      ],
-                    ),
-                  ),
-                ),
-                InkWell(
-                  onTap: () {
                     Navigator.of(context).push(MaterialPageRoute(
-                      builder: (context) => JobDetailPage(),
+                      builder: (context) => Ignou(),
                     ));
                   },
                   child: Card(
@@ -464,326 +323,7 @@ class latest extends StatelessWidget {
                           color: Colors.black,
                         ),
                         Text(
-                          "NWDA JE, UDC, LDC and Various Post Online Form 2023",
-                          textAlign: TextAlign.center,
-                          style: TextStyle(color: Colors.black, fontSize: 25),
-                        )
-                      ],
-                    ),
-                  ),
-                ),
-                InkWell(
-                  onTap: () {
-                    // Navigator.of(context).push(MaterialPageRoute(
-                    //   builder: (context) => VideoAp(),
-                    // ));
-                  },
-                  child: Card(
-                    elevation: 1,
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10.0),
-                        side: BorderSide(color: Colors.black, width: 2)),
-                    color: Colors.transparent,
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Icon(
-                          Icons.chat,
-                          size: 50,
-                          color: Colors.black,
-                        ),
-                        Text(
-                          "Central Bank of India Apprentices Online Form 2023",
-                          textAlign: TextAlign.center,
-                          style: TextStyle(color: Colors.black, fontSize: 25),
-                        )
-                      ],
-                    ),
-                  ),
-                ),
-                InkWell(
-                  onTap: () {
-                    // Navigator.of(context).push(MaterialPageRoute(
-                    //   builder: (context) => VieoaApp(),
-                    // ));
-                  },
-                  child: Card(
-                    elevation: 1,
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10.0),
-                        side: BorderSide(color: Colors.black, width: 2)),
-                    color: Colors.transparent,
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Icon(
-                          Icons.chat,
-                          size: 50,
-                          color: Colors.black,
-                        ),
-                        Text(
-                          "SSC GD Constable 2022 Revised Vacancy Details",
-                          textAlign: TextAlign.center,
-                          style: TextStyle(color: Colors.black, fontSize: 25),
-                        )
-                      ],
-                    ),
-                  ),
-                ),
-                InkWell(
-                  onTap: () {
-                    // Navigator.of(context).push(MaterialPageRoute(
-                    //   builder: (context) => VieoaaApp(),
-                    // ));
-                  },
-                  child: Card(
-                    elevation: 1,
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10.0),
-                        side: BorderSide(color: Colors.black, width: 2)),
-                    color: Colors.transparent,
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Icon(
-                          Icons.chat,
-                          size: 50,
-                          color: Colors.black,
-                        ),
-                        Text(
-                          "Airforce Agniveer 02/2023 Online Form",
-                          textAlign: TextAlign.center,
-                          style: TextStyle(color: Colors.black, fontSize: 25),
-                        )
-                      ],
-                    ),
-                  ),
-                ),
-                InkWell(
-                  onTap: () {
-                    // Navigator.of(context).push(MaterialPageRoute(
-                    //   builder: (context) => VieoasApp(),
-                    // ));
-                  },
-                  child: Card(
-                    elevation: 1,
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10.0),
-                        side: BorderSide(color: Colors.black, width: 2)),
-                    color: Colors.transparent,
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Icon(
-                          Icons.chat,
-                          size: 50,
-                          color: Colors.black,
-                        ),
-                        Text(
-                          "Delhi DSSSB Various Post Online Form 2023",
-                          textAlign: TextAlign.center,
-                          style: TextStyle(color: Colors.black, fontSize: 25),
-                        )
-                      ],
-                    ),
-                  ),
-                ),
-                InkWell(
-                  onTap: () {
-                    // Navigator.of(context).push(MaterialPageRoute(
-                    //   builder: (context) => VideoApp(),
-                    // ));
-                  },
-                  child: Card(
-                    elevation: 1,
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10.0),
-                        side: BorderSide(color: Colors.black, width: 2)),
-                    color: Colors.transparent,
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Icon(
-                          Icons.chat,
-                          size: 50,
-                          color: Colors.black,
-                        ),
-                        Text(
-                          "NTA CSIR UGC NET Online Form June 2023",
-                          textAlign: TextAlign.center,
-                          style: TextStyle(color: Colors.black, fontSize: 25),
-                        )
-                      ],
-                    ),
-                  ),
-                ),
-                InkWell(
-                  onTap: () {
-                    // Navigator.of(context).push(MaterialPageRoute(
-                    //   builder: (context) => Videopp(),
-                    // ));
-                  },
-                  child: Card(
-                    elevation: 1,
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10.0),
-                        side: BorderSide(color: Colors.black, width: 2)),
-                    color: Colors.transparent,
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Icon(
-                          Icons.chat,
-                          size: 50,
-                          color: Colors.black,
-                        ),
-                        Text(
-                          "AAICLAS Security Screener Online Form 2023",
-                          textAlign: TextAlign.center,
-                          style: TextStyle(color: Colors.black, fontSize: 25),
-                        )
-                      ],
-                    ),
-                  ),
-                ),
-                InkWell(
-                  onTap: () {
-                    // Navigator.of(context).push(MaterialPageRoute(
-                    //   builder: (context) => VideoAp(),
-                    // ));
-                  },
-                  child: Card(
-                    elevation: 1,
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10.0),
-                        side: BorderSide(color: Colors.black, width: 2)),
-                    color: Colors.transparent,
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Icon(
-                          Icons.chat,
-                          size: 50,
-                          color: Colors.black,
-                        ),
-                        Text(
-                          "NIC Scientific and Technical Posts Online Form 2023",
-                          textAlign: TextAlign.center,
-                          style: TextStyle(color: Colors.black, fontSize: 25),
-                        )
-                      ],
-                    ),
-                  ),
-                ),
-                InkWell(
-                  onTap: () {
-                    // Navigator.of(context).push(MaterialPageRoute(
-                    //   builder: (context) => VieoaApp(),
-                    // ));
-                  },
-                  child: Card(
-                    elevation: 1,
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10.0),
-                        side: BorderSide(color: Colors.black, width: 2)),
-                    color: Colors.transparent,
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Icon(
-                          Icons.chat,
-                          size: 50,
-                          color: Colors.black,
-                        ),
-                        Text(
-                          "MP Apex Bank Various Post Online Form 2023",
-                          textAlign: TextAlign.center,
-                          style: TextStyle(color: Colors.black, fontSize: 25),
-                        )
-                      ],
-                    ),
-                  ),
-                ),
-                InkWell(
-                  onTap: () {
-                    // Navigator.of(context).push(MaterialPageRoute(
-                    //   builder: (context) => VieoaaApp(),
-                    // ));
-                  },
-                  child: Card(
-                    elevation: 1,
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10.0),
-                        side: BorderSide(color: Colors.black, width: 2)),
-                    color: Colors.transparent,
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Icon(
-                          Icons.chat,
-                          size: 50,
-                          color: Colors.black,
-                        ),
-                        Text(
-                          "SSC Selection Post XI Online Form 2023",
-                          textAlign: TextAlign.center,
-                          style: TextStyle(color: Colors.black, fontSize: 25),
-                        )
-                      ],
-                    ),
-                  ),
-                ),
-                InkWell(
-                  onTap: () {
-                    // Navigator.of(context).push(MaterialPageRoute(
-                    //   builder: (context) => VieoasApp(),
-                    // ));
-                  },
-                  child: Card(
-                    elevation: 1,
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10.0),
-                        side: BorderSide(color: Colors.black, width: 2)),
-                    color: Colors.transparent,
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Icon(
-                          Icons.chat,
-                          size: 50,
-                          color: Colors.black,
-                        ),
-                        Text(
-                          "UPUMS Staff Nurse Online Form 2023",
-                          textAlign: TextAlign.center,
-                          style: TextStyle(color: Colors.black, fontSize: 25),
-                        )
-                      ],
-                    ),
-                  ),
-                ),
-                InkWell(
-                  onTap: () {
-                    // Navigator.of(context).push(MaterialPageRoute(
-                    //   builder: (context) => VieoasApp(),
-                    // ));
-                  },
-                  child: Card(
-                    elevation: 1,
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10.0),
-                        side: BorderSide(color: Colors.black, width: 2)),
-                    color: Colors.transparent,
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Icon(
-                          Icons.chat,
-                          size: 50,
-                          color: Colors.black,
-                        ),
-                        Text(
-                          "BSF Latest and Upcoming Recruitment 2023",
+                          "IGNOU Junior Assistant Online Form 2023",
                           textAlign: TextAlign.center,
                           style: TextStyle(color: Colors.black, fontSize: 25),
                         )

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:readmore/readmore.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Upprivate extends StatefulWidget {
   Upprivate({Key}) : super();
@@ -56,7 +57,7 @@ class _UpprivatePageState extends State<Upprivate> {
             children: [
               _headerStatic("Salary", "Unknown"),
               _headerStatic("Applicants", "45080"),
-              _headerStatic("Post Date", "16 March 2023"),
+              _headerStatic("Post Date", "20 April 2023"),
             ],
           ),
           SizedBox(height: 10),
@@ -203,7 +204,9 @@ class _UpprivatePageState extends State<Upprivate> {
                   backgroundColor: MaterialStateProperty.all(Colors.amber),
                   padding: MaterialStateProperty.all(
                       EdgeInsets.symmetric(vertical: 16))),
-              onPressed: () {},
+              onPressed: () {
+                launch('https://uppsc.up.nic.in');
+              },
               child: Text(
                 "Apply Now",
                 style: TextStyle(

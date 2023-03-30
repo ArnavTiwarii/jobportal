@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:readmore/readmore.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Codevita extends StatefulWidget {
   Codevita({Key}) : super();
@@ -203,7 +204,9 @@ class _CodevitaPageState extends State<Codevita> {
                   backgroundColor: MaterialStateProperty.all(Colors.amber),
                   padding: MaterialStateProperty.all(
                       EdgeInsets.symmetric(vertical: 16))),
-              onPressed: () {},
+              onPressed: () {
+                launch('https://www.tcscodevita.com');
+              },
               child: Text(
                 "Apply Now",
                 style: TextStyle(

@@ -2,20 +2,20 @@ import 'package:flutter/material.dart';
 import 'package:readmore/readmore.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-class Tcs extends StatefulWidget {
-  Tcs({Key}) : super();
+class Armyteacher extends StatefulWidget {
+  Armyteacher({Key}) : super();
 
   static Route<T> getJobDetail<T>() {
     return MaterialPageRoute(
-      builder: (_) => Tcs(),
+      builder: (_) => Armyteacher(),
     );
   }
 
   @override
-  _TcsPageState createState() => _TcsPageState();
+  _ArmyteacherState createState() => _ArmyteacherState();
 }
 
-class _TcsPageState extends State<Tcs> {
+class _ArmyteacherState extends State<Armyteacher> {
   Widget _header(BuildContext context) {
     return Container(
       padding: EdgeInsets.symmetric(horizontal: 26, vertical: 20),
@@ -24,7 +24,7 @@ class _TcsPageState extends State<Tcs> {
           Row(
             children: [
               Image.network(
-                  'https://jobportall.s3.ap-south-1.amazonaws.com/Internshiplink/logo/TCS.png',
+                  'https://jobportall.s3.ap-south-1.amazonaws.com/latestjob/army.png',
                   height: 40),
               SizedBox(
                 width: 30,
@@ -33,7 +33,7 @@ class _TcsPageState extends State<Tcs> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    "Tata Consultancy Services",
+                    "Army JCO Teacher",
                     style: TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.bold,
@@ -41,7 +41,7 @@ class _TcsPageState extends State<Tcs> {
                   ),
                   SizedBox(height: 5),
                   Text(
-                    "Internship 2023",
+                    "Online Form 2023",
                     style: TextStyle(
                       fontSize: 13,
                       fontWeight: FontWeight.bold,
@@ -55,9 +55,9 @@ class _TcsPageState extends State<Tcs> {
           SizedBox(height: 32),
           Row(
             children: [
-              _headerStatic("Salary", "\₹153,000"),
-              _headerStatic("Applicants", "45980"),
-              _headerStatic("Post Date", "16 March 2023"),
+              _headerStatic("Salary", "Unknown"),
+              _headerStatic("Applicants", "145080"),
+              _headerStatic("Post Date", "16 April 2023"),
             ],
           ),
           SizedBox(height: 10),
@@ -119,7 +119,7 @@ class _TcsPageState extends State<Tcs> {
     return Container(
       padding: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
       child: ReadMoreText(
-        'Tcs isnt just a software company. The Hardware Operations team is responsible for monitoring the state-of-the-art physical infrastructure behind Googles powerful search technology. As an Operations Technician, you will install, configure, test, troubleshoot and maintain hardware (like servers and its components) and server software (like Googles Linux cluster). You will also take on the configuration of more complex components such as networks, routers, hubs, bridges, switches and networking protocols. You will participate in or lead small project teams on larger installations and develop project contingency plans. A typical day involves manual movement and installation of racks, and while it can sometimes be physically demanding, you are excited to work with infrastructure that is at the cutting-edge of computer technology.\n In this role, you will deploy and maintain Googles Data Center Server and Network Infrastructure by installing, configuring, testing, troubleshooting, and repairing hardware and server software. Youu will manage the configuration of networks, routers, bridges, and switches.',
+        'Army will be enrolled in the Indian Navy under the Navy Act 1957 for a period of four years. Agniveers would from a distinct rank in the Armed Forces, different from any other existing ranks.\n On completion of the four years period, Agniveers will go back to the society as disciplined, dynamic, motivated and skilled work force for employment in the other sectors, thereby contributing further in nation building. Indian Navy in not obligated to retain Agniveers beyond the engagement period of four years. The skills gained by each Agniveer will be captured in a certificate to form part of his resume.',
         trimLines: 5,
         style: TextStyle(fontSize: 17, color: Color.fromARGB(255, 75, 73, 73)),
         colorClickableText: Colors.pink,
@@ -134,7 +134,7 @@ class _TcsPageState extends State<Tcs> {
     return Container(
       child: Center(
         child: Text(
-          'Minimum qualifications',
+          'Important Dates',
           style: TextStyle(
             fontSize: 18,
             fontWeight: FontWeight.bold,
@@ -150,7 +150,7 @@ class _TcsPageState extends State<Tcs> {
       padding: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
       child: Center(
         child: Text(
-          '● Bachelors degree or equivalent practical experience.\n ● Experience with Operating Systems and Networking Protocols.\n ● Experience with troubleshooting, diagnosing, \nmaintenance, and monitoring of computer hardware and server hardware.',
+          '● Application Begin : 15/03/2023\n ● Last Date for Apply Online : 29/03/2023\n ● Correction Last Date : 03/04/2023\n ● Exam Date Start : 17/06/2023',
           style: TextStyle(
             fontSize: 17,
             fontWeight: FontWeight.bold,
@@ -165,7 +165,7 @@ class _TcsPageState extends State<Tcs> {
     return Container(
       child: Center(
         child: Text(
-          'Preferred qualifications',
+          'Application Fees',
           style: TextStyle(
             fontSize: 18,
             fontWeight: FontWeight.bold,
@@ -181,7 +181,7 @@ class _TcsPageState extends State<Tcs> {
       padding: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
       child: Center(
         child: Text(
-          '● Experience working with and troubleshooting hardware or network related issues using Linux-based tools.\n ● Experience with coding, systems administration or scripting.\n ● Experience with light coding or scripting.Experience troubleshooting OS, network equipment, and software.\n ● Ability to collaborate and partner with people and teams to overcome challenges.\n ● Ability to manage competing and changing priorities.',
+          '● General / Other State : ₹560/-\n ● SC / ST / OBC : ₹310/-\n ● Portal Charge : ₹60/- (Include)\n ● Pay the Exam Fee Through Cash\n ● Pay Debit Card, Credit Card\n ● Net Banking Fee Mode Only.',
           style: TextStyle(
             fontSize: 17,
             fontWeight: FontWeight.bold,
@@ -205,7 +205,7 @@ class _TcsPageState extends State<Tcs> {
                   padding: MaterialStateProperty.all(
                       EdgeInsets.symmetric(vertical: 16))),
               onPressed: () {
-                launch('https://www.tcs.com/careers/india/internship');
+                launch('https://www.joinindiannavy.gov.in');
               },
               child: Text(
                 "Apply Now",

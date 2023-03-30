@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:readmore/readmore.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Gitlab extends StatefulWidget {
   Gitlab({Key}) : super();
@@ -203,7 +204,10 @@ class _GitlabPageState extends State<Gitlab> {
                   backgroundColor: MaterialStateProperty.all(Colors.amber),
                   padding: MaterialStateProperty.all(
                       EdgeInsets.symmetric(vertical: 16))),
-              onPressed: () {},
+              onPressed: () {
+                launch(
+                    'https://about.gitlab.com/handbook/engineering/internships');
+              },
               child: Text(
                 "Apply Now",
                 style: TextStyle(

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:readmore/readmore.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Google extends StatefulWidget {
   Google({Key}) : super();
@@ -203,7 +204,9 @@ class _GooglePageState extends State<Google> {
                   backgroundColor: MaterialStateProperty.all(Colors.amber),
                   padding: MaterialStateProperty.all(
                       EdgeInsets.symmetric(vertical: 16))),
-              onPressed: () {},
+              onPressed: () {
+                launch('https://careers.google.com/students');
+              },
               child: Text(
                 "Apply Now",
                 style: TextStyle(

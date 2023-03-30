@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:readmore/readmore.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class JobDetailPage extends StatefulWidget {
   JobDetailPage({Key}) : super();
@@ -25,9 +26,6 @@ class _JobDetailPageState extends State<JobDetailPage> {
               Image.network(
                   'https://jobportall.s3.ap-south-1.amazonaws.com/latestjob/mpesb.jpg',
                   height: 40),
-              // Image.asset(
-              //     'https://afsha.s3.ap-south-1.amazonaws.com/home+pic/engineering.jpg',
-              //     height: 40),
               SizedBox(
                 width: 30,
               ),
@@ -206,7 +204,9 @@ class _JobDetailPageState extends State<JobDetailPage> {
                   backgroundColor: MaterialStateProperty.all(Colors.amber),
                   padding: MaterialStateProperty.all(
                       EdgeInsets.symmetric(vertical: 16))),
-              onPressed: () {},
+              onPressed: () {
+                launch('https://peb.mponline.gov.in');
+              },
               child: Text(
                 "Apply Now",
                 style: TextStyle(

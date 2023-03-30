@@ -48,7 +48,7 @@ class HomePage extends StatelessWidget {
                     padding: const EdgeInsets.all(30.0),
                   ),
                   Center(
-                    child: Text("EDTECH",
+                    child: Text("SmartEd",
                         style: GoogleFonts.abrilFatface(
                           textStyle: style,
                         )),
@@ -297,7 +297,7 @@ class HomePage extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.all(10.0),
                 child: Text(
-                  'WITH EDTECH',
+                  'WITH SmartEd',
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                 ),
               ),
@@ -321,7 +321,7 @@ class HomePage extends StatelessWidget {
               ),
               Padding(
                 padding: const EdgeInsets.all(8.0),
-                child: Text('Exams like UPSC are easy to crack with EDTECH '),
+                child: Text('Exams like UPSC are easy to crack with SmartEd '),
               )
             ])),
       );

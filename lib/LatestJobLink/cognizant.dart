@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:readmore/readmore.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Cognizant extends StatefulWidget {
   Cognizant({Key}) : super();
@@ -203,7 +204,9 @@ class _CognizantPageState extends State<Cognizant> {
                   backgroundColor: MaterialStateProperty.all(Colors.amber),
                   padding: MaterialStateProperty.all(
                       EdgeInsets.symmetric(vertical: 16))),
-              onPressed: () {},
+              onPressed: () {
+                launch('https://www.cognizant.com/in/en');
+              },
               child: Text(
                 "Apply Now",
                 style: TextStyle(
